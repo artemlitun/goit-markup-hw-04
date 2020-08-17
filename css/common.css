@@ -102,6 +102,7 @@ body {
 }
 
 .nav-contacts a {
+  display: inline-flex;
   color: var(--accent-text-color);
   font-weight: 500;
   font-size: 14px;
@@ -112,6 +113,24 @@ body {
 .nav-contacts a:hover,
 .nav-contacts a:focus {
   color: var(--accent-color);
+}
+
+.nav-mail::before {
+  content: "";
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  /* background-size: contain; */
+  background-image: url(../images/web-studio/contacts-icons/letter-icon.svg);
+}
+
+.nav-tel::before {
+  content: "";
+  width: 10px;
+  height: 15px;
+  margin-right: 10px;
+  /* background-size: contain; */
+  background-image: url(../images/web-studio/contacts-icons/phone-icon.svg);
 }
 
 .section-title {
@@ -126,7 +145,9 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
 }
+
 /* Footer */
+
 .footer {
   display: block;
   padding-top: 60px;
@@ -181,16 +202,51 @@ body {
   display: flex;
 }
 
-.footer-social .item + .item {
-  margin-left: 10px;
+.footer-social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  margin-right: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+  background-position: center;
+  border-radius: 50%;
 }
 
-.footer .button {
-  padding: 10px 62px 10px 29px;
+.footer-social-link:hover {
+  background-color: var(--accent-color);
 }
 
+.footer-social-link-instagram {
+  background-image: url(../images/web-studio/social-icons/iconswhite/instagram2.svg);
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  background-position: center;
+}
+
+.footer-social-icon-twitter {
+  background-image: url(../images/web-studio/social-icons/iconswhite/twitter1.svg);
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  background-position: center;
+}
+.footer-social-icon-facebook {
+  background-image: url(../images/web-studio/social-icons/iconswhite/facebook1.svg);
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  background-position: center;
+}
+.footer-social-icon-linkedin {
+  background-image: url(../images/web-studio/social-icons/iconswhite/linkedin2.svg);
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  background-position: center;
+}
 .button {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 26px 10px 29px;
   color: var(--secondary-text-color);
   background-color: var(--accent-color);
   font-weight: 700;
@@ -200,5 +256,12 @@ body {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   min-width: 200px;
-  text-align: center;
+  font-size: 16px;
+}
+.footer-subscribe .button::after {
+  content: "";
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+  background-image: url(../images/web-studio/contacts-icons/samoletik-icon.svg);
 }

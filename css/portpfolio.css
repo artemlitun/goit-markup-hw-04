@@ -64,7 +64,7 @@
   --secondary-text-color: #ffffff;
 } */
 
-/* .portfolio-items {
+.portfolio-items {
   display: flex;
   flex-wrap: wrap;
   margin: -15px;
@@ -72,18 +72,18 @@
 .portfolio-items .item {
   width: 370px;
   margin: 15px;
-} */
+}
 
-.portfolio-container {
+/* .portfolio-container {
   display: flex;
   flex-wrap: wrap;
-  /* 
+
   margin-right: -30px;
-  margin-bottom: -30px; */
+  margin-bottom: -30px;
 }
 .portfolio-items .item {
   flex-basis: calc((100% - 3 * 30px) / 9);
-  /* 
+
   margin-right: 30px;
-  margin-bottom: 30px; */
-}
+  margin-bottom: 30px;
+} */
