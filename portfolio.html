@@ -19,30 +19,41 @@
   <body>
     <header class="header">
       <!-- Шапка сайта -->
+      <!-- Пофиксить ховер при нахождении на странице -->
       <nav class="container main-nav">
         <a class="logo link" href="#">
           <span class="accent">Web</span>Studio
         </a>
         <ul class="site-nav list">
           <li class="item">
-            <a class="link current" href="#">Студия</a>
+            <a class="site-nav-link link" href="./index.html">Студия</a>
           </li>
           <li class="item">
-            <a class="link" href="./portfolio.html">Портфолио</a>
+            <a class="site-nav-link link current" href="#">Портфолио</a>
           </li>
           <li class="item">
-            <a class="link" href="#">Контакты</a>
+            <a class="site-nav-link link" href="#">Контакты</a>
           </li>
         </ul>
         <ul class="nav-contacts list">
           <li class="item">
-            <a class="nav-mail link" href="info@devstudio.com"
-              >info@devstudio.com</a
+            <a class="nav-contacts-link link" href="info@devstudio.com">
+              <svg class="nav-mail-icon-svg">
+                <use
+                  href="./images/web-studio/icons/sprite.svg#icon-letter-icon"
+                ></use>
+              </svg>
+              info@devstudio.com</a
             >
           </li>
           <li class="item">
-            <a class="nav-tel link" href="tel:+380961111111"
-              >+38 096 111 11 11</a
+            <a class="nav-contacts-link link" href="tel:+380961111111"
+              ><svg class="nav-tel-icon-svg">
+                <use
+                  href="./images/web-studio/icons/sprite.svg#icon-phone-icon"
+                ></use>
+              </svg>
+              +38 096 111 11 11</a
             >
           </li>
         </ul>
@@ -86,9 +97,10 @@
 
           <div class="portfolio-container">
             <ul class="portfolio-items list">
-              <li class="item">
-                <a href="#" class="link">
+              <li class="portfolio-item">
+                <a href="#" class="portfolio-item-link link">
                   <img
+                    class="portfolio-item-img"
                     src="./images/portfolio/optimized/img-1.jpg"
                     alt="Открытый ноутбук"
                     width="370"
@@ -104,9 +116,10 @@
                   защищённые сервера конкурентов.
                 </p> -->
               </li>
-              <li class="item">
-                <a href="#" class="link">
+              <li class="portfolio-item">
+                <a href="#" class="portfolio-item-link link">
                   <img
+                    class="portfolio-item-img"
                     src="./images/portfolio/optimized/img-2.jpg"
                     alt="Два баскетболиста с мячом"
                     width="370"
@@ -124,9 +137,10 @@
                   mollitia quasi ad placeat laboriosam.
                 </p> -->
               </li>
-              <li class="item">
-                <a href="#" class="link">
+              <li class="portfolio-item">
+                <a href="#" class="portfolio-item-link link">
                   <img
+                    class="portfolio-item-img"
                     src="./images/portfolio/optimized/img-3.jpg"
                     alt="Логотип рыбного ресторана"
                     width="370"
@@ -142,9 +156,10 @@
                   mollitia quasi ad placeat laboriosam.
                 </p> -->
               </li>
-              <li class="item">
-                <a href="#" class="link">
+              <li class="portfolio-item">
+                <a href="#" class="portfolio-item-link link">
                   <img
+                    class="portfolio-item-img"
                     src="./images/portfolio/optimized/img-4.jpg"
                     alt="Большие наушники"
                     width="370"
@@ -160,9 +175,10 @@
                   mollitia quasi ad placeat laboriosam.
                 </p> -->
               </li>
-              <li class="item">
-                <a href="#" class="link">
+              <li class="portfolio-item">
+                <a href="#" class="portfolio-item-link link">
                   <img
+                    class="portfolio-item-img"
                     src="./images/portfolio/optimized/img-5.jpg"
                     alt="Две коробки"
                     width="370"
@@ -178,9 +194,10 @@
                   mollitia quasi ad placeat laboriosam.
                 </p> -->
               </li>
-              <li class="item">
-                <a href="#" class="link">
+              <li class="portfolio-item">
+                <a href="#" class="portfolio-item-link link">
                   <img
+                    class="portfolio-item-img"
                     src="./images/portfolio/optimized/img-6.jpg"
                     alt="Монитор компьютера"
                     width="370"
@@ -196,9 +213,10 @@
                   mollitia quasi ad placeat laboriosam.
                 </p> -->
               </li>
-              <li class="item">
-                <a href="#" class="link">
+              <li class="portfolio-item">
+                <a href="#" class="portfolio-item-link link">
                   <img
+                    class="portfolio-item-img"
                     src="./images/portfolio/optimized/img-7.jpg"
                     alt="Открытый журнал"
                     width="370"
@@ -214,9 +232,10 @@
                   mollitia quasi ad placeat laboriosam.
                 </p> -->
               </li>
-              <li class="item">
-                <a href="#" class="link">
+              <li class="portfolio-item">
+                <a href="#" class="portfolio-item-link link">
                   <img
+                    class="portfolio-item-img"
                     src="./images/portfolio/optimized/img-8.jpg"
                     alt="Бирка с логотипом компании"
                     width="370"
@@ -232,9 +251,10 @@
                   mollitia quasi ad placeat laboriosam.
                 </p> -->
               </li>
-              <li class="item">
-                <a href="#" class="link">
+              <li class="portfolio-item">
+                <a href="#" class="portfolio-item-link link">
                   <img
+                    class="portfolio-item-img"
                     src="./images/portfolio/optimized/img-1.jpg"
                     alt="Открытый ноутбук"
                     width="370"
@@ -289,11 +309,11 @@
                 aria-label="ссылка на инстаграм"
                 target="_blank"
               >
-                <!-- <svg>
+                <svg class="footer-social-link-svg">
                   <use
-                    href="../goit-markup-hw-04/images/web-studio/social-icons/iconswhite/sprite2.svg#icon-instagram2"
+                    href="./images/web-studio/icons/sprite.svg#icon-instagram"
                   ></use>
-                </svg> -->
+                </svg>
               </a>
             </li>
             <li class="social-icon">
@@ -303,11 +323,11 @@
                 aria-label="ссылка на твитер"
                 target="_blank"
               >
-                <!-- <svg>
+                <svg class="footer-social-link-svg">
                   <use
-                    href="../goit-markup-hw-04/images/web-studio/social-icons/iconswhite/sprite2.svg#icon-twitter2"
+                    href="./images/web-studio/icons/sprite.svg#icon-twitter"
                   ></use>
-                </svg> -->
+                </svg>
               </a>
             </li>
             <li class="social-icon">
@@ -317,11 +337,11 @@
                 aria-label="ссылка на фейсбук"
                 target="_blank"
               >
-                <!-- <svg>
-                <use
-                  href="../goit-markup-hw-04/images/web-studio/social-icons/iconswhite/sprite2.svg#icon-facebook2"
-                ></use>
-              </svg> -->
+                <svg class="footer-social-link-svg">
+                  <use
+                    href="./images/web-studio/icons/sprite.svg#icon-facebook"
+                  ></use>
+                </svg>
               </a>
             </li>
             <li class="social-icon">
@@ -331,11 +351,11 @@
                 aria-label="ссылка на линкедин"
                 target="_blank"
               >
-                <!-- <svg>
-                <use
-                  href="../goit-markup-hw-04/images/web-studio/social-icons/iconswhite/sprite2.svg#icon-linkedin2"
-                ></use>
-              </svg> -->
+                <svg class="footer-social-link-svg">
+                  <use
+                    href="./images/web-studio/icons/sprite.svg#icon-linkedin"
+                  ></use>
+                </svg>
               </a>
             </li>
           </ul>

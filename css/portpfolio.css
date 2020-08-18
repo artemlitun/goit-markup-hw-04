@@ -50,6 +50,12 @@
   letter-spacing: 0.03em;
 }
 
+.portfolio-item:hover {
+  border: 1px solid #eeeeee;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 /* Текст для ховера */
 /* .portfolio-desc {
   color: var(--secondary-text-color);
@@ -58,20 +64,19 @@
   line-height: 1.5;
   letter-spacing: 0.03em;
 } */
-/* .portfolio-items a:hover,
-.portfolio-items a:focus {
-  background-color: var(--accent-color);
-  --secondary-text-color: #ffffff;
-} */
 
 .portfolio-items {
   display: flex;
   flex-wrap: wrap;
   margin: -15px;
 }
-.portfolio-items .item {
+.portfolio-items .portfolio-item {
   width: 370px;
   margin: 15px;
+}
+
+.portfolio-item-link img {
+  display: block;
 }
 
 /* .portfolio-container {
