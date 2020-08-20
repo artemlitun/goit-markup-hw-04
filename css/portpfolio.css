@@ -49,6 +49,14 @@
   line-height: 1.9;
   letter-spacing: 0.03em;
 }
+/* ховер для картинки  */
+.portfolio-item {
+  width: 370px;
+}
+
+.portfolio-item-link img {
+  display: block;
+}
 
 .portfolio-item:hover {
   border: 1px solid #eeeeee;
@@ -56,7 +64,6 @@
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-/* Текст для ховера */
 /* .portfolio-desc {
   color: var(--secondary-text-color);
   font-weight: normal;
@@ -68,27 +75,12 @@
 .portfolio-items {
   display: flex;
   flex-wrap: wrap;
-  margin: -15px;
-}
-.portfolio-items .portfolio-item {
-  width: 370px;
-  margin: 15px;
-}
-
-.portfolio-item-link img {
-  display: block;
-}
-
-/* .portfolio-container {
-  display: flex;
-  flex-wrap: wrap;
 
   margin-right: -30px;
   margin-bottom: -30px;
 }
-.portfolio-items .item {
+.portfolio-items .portfolio-item {
   flex-basis: calc((100% - 3 * 30px) / 9);
-
   margin-right: 30px;
   margin-bottom: 30px;
-} */
+}

@@ -23,9 +23,6 @@
   color: var(--secondary-text-color);
   margin-top: 0;
   margin-bottom: 30px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 200px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -33,17 +30,24 @@
   text-transform: uppercase;
 }
 
+.hero {
+  text-align: center;
+  padding: 200px 0px;
+}
+
 .hero .button {
   padding: 10px 32px;
-  margin-bottom: 200px;
 }
 
 /* <!-- Секция преимущества --> */
 
+.section.features {
+  padding-top: 94px;
+}
 .features-items {
   display: flex;
-  padding-top: 94px;
-  margin-bottom: 94px;
+  /* padding-top: 94px; */
+  /* margin-bottom: 94px; */
 }
 
 .features-items .item + .item {
@@ -89,11 +93,18 @@
 }
 
 /* <!-- Секция чем мы занимаемся --> */
-.about-items {
-  display: flex;
+.about {
+  padding-top: 94px;
   padding-bottom: 94px;
 }
 
+.about-items {
+  display: flex;
+}
+
+.about-items img {
+  display: block;
+}
 .about-items .item + .item {
   margin-left: 30px;
 }
@@ -112,10 +123,23 @@
 /* <!-- Секция Наша команда --> */
 .team {
   background-color: var(--secondary-bg-color);
+
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.team-item img {
+  display: block;
+}
+/* .team .section-title {
+  padding-top: 94px;
+} */
+
+.team-item {
+  display: flex;
 }
 
-.team .section-title {
-  padding-top: 94px;
+.team-item .item + .item {
+  margin-left: 30px;
 }
 
 .content {
@@ -126,19 +150,6 @@
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-}
-
-.team-item {
-  display: flex;
-  padding-bottom: 94px;
-}
-
-.team-item img {
-  display: block;
-}
-
-.team-item .item + .item {
-  margin-left: 30px;
 }
 
 .team-item .name {
@@ -200,8 +211,9 @@
 
 /* Секция постоянные клиенты  */
 
-.clients .section-title {
+.clients {
   padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .clients-logo-link {
@@ -260,13 +272,10 @@
   display: flex;
   flex-wrap: wrap;
   margin-right: -30px;
-  /* margin-bottom: -30px; */
-  padding-bottom: 94px;
 }
 
 .clients-items .item {
   flex-basis: calc((100% - 6 * 30px) / 6);
   width: 170px;
   margin-right: 30px;
-  /* margin-bottom: 30px; */
 }
