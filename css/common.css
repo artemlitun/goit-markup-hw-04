@@ -80,16 +80,12 @@ body {
   color: var(--accent-color);
 }
 
-/* .site-nav .item {
-  width: 48px;
-} */
-
 .site-nav-item-studio::after {
   display: block;
   content: "";
   width: inherit;
   height: 4px;
-  background-color: var(--accent-color);
+  background-color: var(--primary-bg-color);
   border-radius: 2px;
 }
 
@@ -108,7 +104,6 @@ body {
   width: inherit;
   height: 4px;
   background-color: var(--primary-bg-color);
-
   border-radius: 2px;
 }
 
